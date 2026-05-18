@@ -1,12 +1,14 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>My Portifolio</title>
+	<title>My Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://kit.fontawesome.com/187b2fd22d.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 	<div id="header">
 		<div class="container">
@@ -16,11 +18,16 @@
 					<li><a href="#header">Home</a></li>
 					<li><a href="#about">About</a></li>
 					<li><a href="#services">Services</a></li>
-					<li><a href="#portifolio">Portifolio</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
 					<li><a href="#contact">Contact</a></li>
 					<i class="fas fa-times" onclick="closemenu()"></i>
 				</ul>
 				<i class="fas fa-bars" onclick="openmenu()"></i>
+				<!-- Theme toggle button -->
+				<button id="theme-toggle" class="theme-toggle dark" aria-pressed="false" title="Toggle theme">
+					<span class="theme-icon theme-icon--moon"><i class="fas fa-moon"></i></span>
+					<span class="theme-icon theme-icon--sun"><i class="fas fa-sun"></i></span>
+				</button>
 			</nav>
 			<div class="header-text">
 				<p>Web-developer(Front-end)</p>
@@ -38,78 +45,142 @@
 				<div class="about-col-2">
 					<h1 class="sub-title">About me</h1>
 					<p>
-						I'm Ifa Bogale, and I recently received my computer science degree from Haramaya University. I have a solid background in software development and programming, which I have refined via challenging coursework and practical projects. My passions are investigating new technology and finding solutions to challenging issues. I have actively participated in cooperative team projects throughout my academic career, which has helped me develop my analytical and collaborative skills. I can't wait to use my skills and contribute to cutting-edge tech sector solutions as I get ready to enter the workforce.
-						</p>
-						<div class="tab-title">
-							<p class="tab-links active-link" onclick="opentab(event,'skills')">Skills</p>
-							<p class="tab-links" onclick="opentab(event,'experience')">Experience</p>
-							<p class="tab-links" onclick="opentab(event,'education')">Education</p>
-						</div>
-						<div class="tab-contents active-tab" id="skills">
-							<ul>
-								<li><span>Front-End Dev</span><br>Develop frontend webpages</li>
-								<li><span>Web development</span><br>Web development</li>
-								<li><span>App development</span><br>App development</li>
-							</ul>
-						</div>						
-						<div class="tab-contents" id="experience">
-							<ul>
-								<li><span>2023/07/24 - 2023/07/24</span><br>Internship at Ethiopia Statistical Service</li>
-							</ul>
-						</div>
-						<div class="tab-contents" id="education">
-							<ul>
-								<li><span>Haramaya University</span><br>Bachelor's Degree (B.A. or B.Sc.) in Computer Science</li>
-								<li><span>Cisco Networking Academy</span><br>Introduction to Cyber-Security</li>
-								<li><span>UDACITY</span><br>Artifcial Intelligence Fundamental and Programming Fundamentals</li>
-							</ul>
-						</div>
+						I'm Ifa Bogale, and I recently received my computer science degree from Haramaya University. I
+						have a solid background in software development and programming, which I have refined via
+						challenging coursework and practical projects. My passions are investigating new technology and
+						finding solutions to challenging issues. I have actively participated in cooperative team
+						projects throughout my academic career, which has helped me develop my analytical and
+						collaborative skills. I can't wait to use my skills and contribute to cutting-edge tech sector
+						solutions as I get ready to enter the workforce.
+					</p>
+					<div class="tab-title">
+						<p class="tab-links active-link" onclick="opentab(event,'skills')">Skills</p>
+						<p class="tab-links" onclick="opentab(event,'experience')">Experience</p>
+						<p class="tab-links" onclick="opentab(event,'education')">Education</p>
+					</div>
+					<div class="tab-contents active-tab" id="skills">
+						<ul>
+							<li><span>Front-End Dev</span><br>Develop frontend webpages</li>
+							<li><span>Web development</span><br>Web development</li>
+							<li><span>App development</span><br>App development</li>
+						</ul>
+					</div>
+					<div class="tab-contents" id="experience">
+						<ul>
+							<li><span>2023/07/24 - 2023/07/24</span><br>Internship at Ethiopia Statistical Service</li>
+							<br>
+							<li><span>2025/05/22 - Present</span>
+								<br>Junior QA,Safaricom Telecommunications Ethiopia
+								PLC
+							</li>
+						</ul>
+					</div>
+					<div class="tab-contents" id="education">
+						<ul>
+							<li><span>Haramaya University</span><br>Bachelor's Degree (B.A. or B.Sc.) in Computer
+								Science</li>
+							<li><span>Cisco Networking Academy</span><br>Introduction to Cyber-Security</li>
+							<li><span>UDACITY</span><br>Artificial Intelligence Fundamentals and Programming
+								Fundamentals</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- -----------services-------------  -->
 	<div id="services">
-		<div class="cotainer">
+		<div class="container">
 			<h1 class="sub-title">My Services</h1>
 			<div class="services-list">
 				<div>
 					<i class="fa-solid fa-code"></i>
 					<h2>Web Development</h2>
-					<p>I'm proficient in HTML, CSS, and JavaScript, and I'm actively expanding my skills in modern frontend frameworks. I'm a quick learner, a dedicated team player, and I'm excited to contribute to innovative web projects.</p>
+					<p>I'm proficient in HTML, CSS, and JavaScript, and I'm actively expanding my skills in modern
+						frontend frameworks. I'm a quick learner, a dedicated team player, and I'm excited to contribute
+						to innovative web projects.</p>
 					<a href="#">Learn more</a>
 				</div>
 				<div>
 					<i class="fa-solid fa-crop"></i>
 					<h2>Programming Languages</h2>
-					<p>I also possess a strong grasp of programming concepts from my experience with Java, C#, and PHP.</p>
+					<p>I also possess a strong grasp of programming concepts from my experience with Java, C#, and PHP.
+					</p>
 					<a href="#">Learn more</a>
 				</div>
 				<div>
 					<i class="fa-brands fa-adn"></i>
 					<h2>App Development</h2>
-					<p>My passions are investigating new technology and finding solutions to challenging issues. I have actively participated in cooperative team projects.</p>
+					<p>My passions are investigating new technology and finding solutions to challenging issues. I have
+						actively participated in cooperative team projects.</p>
 					<a href="#">Learn more</a>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!---- ----------------Portifolio------------------ ------>
-	<div id="portifolio">
+	<!---- ----------------Portfolio------------------ ------>
+	<div id="portfolio">
 		<div class="container">
 			<h1 class="sub-title">My Work</h1>
 			<div class="work-list">
 				<div class="work">
-					<img src="photo/background.jpeg" alt="work">
+					<img src="photo/background.avif" alt="work">
 					<div class="layer">
 						<h3>Hospital Management System</h3>
-						<p>In our university project, we developed a Hospital Management System. My primary role was frontend development, where I designed and implemented the user interface using HTML, CSS, and JavaScript. I focused on creating a responsive and intuitive user experience.</p>
+						<p>In our university project, we developed a Hospital Management System. My primary role was
+							frontend development, where I designed and implemented the user interface using HTML, CSS,
+							and JavaScript. I focused on creating a responsive and intuitive user experience.</p>
 						<a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
 					</div>
 				</div>
-				
+
 			</div>
 			<a href="#" class="btn">See more</a>
+		</div>
+	</div>
+	<!---- ----------------Other Projects------------------ ------>
+	<div id="projects">
+		<div class="container">
+			<h1 class="sub-title">Other Projects</h1>
+			<div class="project-list">
+				<div class="project-card">
+					<h3><a href="https://ifabogg.github.io/frontend-learning/" target="_blank" rel="noreferrer">Frontend
+							Learning</a></h3>
+					<p>A personal collection of frontend practice pages that demonstrate HTML, CSS, and responsive
+						layout techniques.</p>
+					<a href="https://ifabogg.github.io/frontend-learning/" class="project-link" target="_blank"
+						rel="noreferrer">Visit project</a>
+				</div>
+				<div class="project-card">
+					<h3><a href="https://github.com/IfaBogg/todo-app" target="_blank" rel="noreferrer">Todo App</a></h3>
+					<p>A task manager built with JavaScript showing CRUD interactions, project organization, and local
+						storage support.</p>
+					<a href="https://github.com/IfaBogg/todo-app" class="project-link" target="_blank"
+						rel="noreferrer">Visit project</a>
+				</div>
+				<div class="project-card">
+					<h3><a href="https://ifabogg.github.io/my-resume/" target="_blank" rel="noreferrer">My Resume</a>
+					</h3>
+					<p>An online resume website showcasing professional experience, skills, and contact details in a
+						modern layout.</p>
+					<a href="https://ifabogg.github.io/my-resume/" class="project-link" target="_blank"
+						rel="noreferrer">Visit project</a>
+				</div>
+				<div class="project-card">
+					<h3><a href="https://hawasummaa.vercel.app/" target="_blank" rel="noreferrer">Hawasummaa</a></h3>
+					<p>A live deployed portfolio-style site demonstrating design, content presentation, and web
+						deployment skills.</p>
+					<a href="https://hawasummaa.vercel.app/" class="project-link" target="_blank" rel="noreferrer">Visit
+						project</a>
+				</div>
+				<div class="project-card">
+					<h3><a href="https://github.com/IfaBogg/myreact" target="_blank" rel="noreferrer">My React</a></h3>
+					<p>A React-based project repository highlighting interactive UI components and frontend application
+						structure.</p>
+					<a href="https://github.com/IfaBogg/myreact" class="project-link" target="_blank"
+						rel="noreferrer">Visit project</a>
+				</div>
+			</div>
 		</div>
 	</div>
 	<!---- ----------------Contact------------------ ------>
@@ -127,7 +198,7 @@
 						<a href="#"><i class="fa-brands fa-linkedin"></i></a>
 						<a href="#"><i class="fa-brands fa-telegram"></i></a>
 					</div>
-					<a href="pdf/Ifa_Bogale_CV.pdf" download class="btn btn2">Download CV</a>
+					<a href="pdf/Ifa_Bogale__Resume.pdf" download class="btn btn2">Download CV</a>
 				</div>
 				<div class="contact-right">
 					<form action="" name="submit-to-google-sheet">
@@ -162,19 +233,18 @@
 		// 	event.currentTarget.classList.add("active-link");
 		// 	document.getElementsById(tabname).classList.add("active-tab");
 		// }
-		function opentab(evt, tabname) 
-		{
+		function opentab(evt, tabname) {
 
 			const tablinks = document.getElementsByClassName("tab-links");
 			const tabcontents = document.getElementsByClassName("tab-contents");
 
 			// Correct way to iterate over HTMLCollection:
 			for (let i = 0; i < tablinks.length; i++) {
-					tablinks[i].classList.remove("active-link");
+				tablinks[i].classList.remove("active-link");
 			}
 
 			for (let i = 0; i < tabcontents.length; i++) {
-					tabcontents[i].classList.remove("active-tab");
+				tabcontents[i].classList.remove("active-tab");
 			}
 
 			evt.currentTarget.classList.add("active-link");
@@ -182,7 +252,39 @@
 		}
 
 	</script>
-	
+
+	<!-- Theme toggle script -->
+	<script>
+		(function () {
+			const toggle = document.getElementById('theme-toggle');
+			const body = document.body;
+
+			function setIcon(isLight) {
+				if (!toggle) return;
+				toggle.setAttribute('aria-pressed', isLight ? 'true' : 'false');
+				toggle.classList.toggle('light', isLight);
+				toggle.classList.toggle('dark', !isLight);
+			}
+
+			// Initialize from localStorage
+			const saved = localStorage.getItem('theme');
+			if (saved === 'light') {
+				body.classList.add('light-theme');
+				setIcon(true);
+			} else {
+				setIcon(false);
+			}
+
+			if (toggle) {
+				toggle.addEventListener('click', function () {
+					const isLight = body.classList.toggle('light-theme');
+					localStorage.setItem('theme', isLight ? 'light' : 'dark');
+					setIcon(isLight);
+				});
+			}
+		})();
+	</script>
+
 	<script>
 
 		// var sidemenu = document.getElementsById("sidemenu");
@@ -191,29 +293,29 @@
 		// 	/*sidemenu.style.right = "0";*/
 		// 	if (sidemenu) 
 		// 	{ // Check if the element exists
-    //     sidemenu.style.right = "0";
-    // 	}
+		//     sidemenu.style.right = "0";
+		// 	}
 		// }
 		// function closemenu()
 		// {
 		// 	//sidemenu.style.right = "-200px";
 		// 	if (sidemenu) 
 		// 	{ // Check if the element exists
-    //     sidemenu.style.right = "-200px";
-    // 	}
+		//     sidemenu.style.right = "-200px";
+		// 	}
 		// }
 		var sidemenu = document.getElementById("sidemenu");
 
 		function openmenu() {
-				if (sidemenu) { // Check if the element exists
-						sidemenu.style.right = "0";
-				}
+			if (sidemenu) { // Check if the element exists
+				sidemenu.style.right = "0";
+			}
 		}
 
 		function closemenu() {
-				if (sidemenu) { // Check if the element exists
-						sidemenu.style.right = "-200px";
-				}
+			if (sidemenu) { // Check if the element exists
+				sidemenu.style.right = "-200px";
+			}
 		}
 
 
@@ -226,10 +328,10 @@
 
 		form.addEventListener('submit', e => {
 			e.preventDefault()
-			fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+			fetch(scriptURL, { method: 'POST', body: new FormData(form) })
 				.then(response => {
 					msg.innerHTML = "Message sent successfully"
-					setTimeout(function(){
+					setTimeout(function () {
 						msg.innerHTML = ""
 					}, 5000)
 					form.reset()
@@ -238,6 +340,25 @@
 		})
 	</script>
 
-</body>
-</html>
+	<!-- Scroll-to-top button -->
+	<button id="scroll-top" aria-label="Scroll to top" title="Scroll to top">
+		<i class="fas fa-chevron-up"></i>
+	</button>
 
+	<script>
+			(function () {
+				const btn = document.getElementById('scroll-top');
+				if (!btn) return;
+				function toggleScroll() {
+					if (window.scrollY > 300) { btn.classList.add('visible'); } else { btn.classList.remove('visible'); }
+				}
+				window.addEventListener('scroll', toggleScroll, { passive: true });
+				btn.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+				// initial state
+				toggleScroll();
+			})();
+	</script>
+
+</body>
+
+</html>
