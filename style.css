@@ -6,6 +6,7 @@
 }
 
 html {
+	font-size: 16px;
 	scroll-behavior: smooth;
 }
 
@@ -23,6 +24,8 @@ body {
 }
 
 .container {
+	max-width: 1200px;
+	margin: 0 auto;
 	padding: 10px 10%;
 }
 
@@ -58,6 +61,14 @@ body {
 	outline: 2px solid rgba(255, 255, 255, 0.2);
 }
 
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+	outline: 3px solid #ff004f;
+	outline-offset: 3px;
+}
+
 /* Smooth theme transitions */
 body {
 	transition: background-color 0.3s ease, color 0.3s ease;
@@ -68,6 +79,7 @@ nav {
 	align-items: center;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	position: relative;
 }
 
 .logo {
@@ -101,7 +113,7 @@ nav ul li a::after {
 	position: absolute;
 	left: 0;
 	bottom: -6px;
-	transition: 5s;
+	transition: 0.3s ease;
 }
 
 nav ul li a:hover::after {
@@ -536,8 +548,12 @@ form .btn2 {
 
 
 /* ----------------- css for small screens ------------------- */
-nav .fas {
+.menu-toggle {
 	display: none;
+	border: none;
+	background: transparent;
+	color: inherit;
+	cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
@@ -562,64 +578,50 @@ nav .fas {
 		font-size: 30px;
 	}
 
-	nav .fas {
-		display: block;
+	.menu-toggle {
+		display: inline-flex;
 		font-size: 30px;
 		cursor: pointer;
 		/* Make the icon clickable */
+		align-items: center;
+		justify-content: center;
 	}
 
-	nav ul {
+	#sidemenu {
 		background: #ff004f;
 		position: fixed;
 		top: 0;
-		right: -200px;
-		width: 200px;
+		right: -240px;
+		width: 240px;
 		height: 100vh;
 		padding-top: 50px;
 		z-index: 2;
-		transition: right 0.5s;
+		transition: right 0.3s ease;
 		overflow-y: auto;
 		/* Add scroll if menu items exceed viewport height */
 	}
 
-	nav ul li {
-		display: block;
-		margin: 25px;
+	#sidemenu.open {
+		right: 0;
 	}
 
-	nav ul .fas {
+	.menu-close {
 		position: absolute;
-		top: 25px;
-		left: 25px;
-		cursor: pointer;
+		top: 18px;
+		right: 18px;
+		background: transparent;
+		border: none;
+		color: #fff;
+	}
+
+	#sidemenu li {
+		display: block;
+		margin: 25px;
 	}
 
 	.sub-title {
 		font-size: 24px;
 		/* Reduced for smaller screens */
-		text-align: center;
-		/* Center the subtitle */
-	}
-
-	.about-col-1,
-	.about-col-2 {
-		flex-basis: 100%;
-		padding: 20px;
-		/* Add some padding around content */
-		box-sizing: border-box;
-		/* Include padding in element's total width and height */
-	}
-
-	.about-col-1 {
-		margin-bottom: 30px;
-	}
-
-	.about-col-2 {
-		font-size: 14px;
-	}
-
-	.tab-links {
 		font-size: 16px;
 		margin-right: 30px;
 		margin: 10px 0;
@@ -695,6 +697,18 @@ nav .fas {
 	#scroll-top {
 		right: 16px;
 		bottom: 16px;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
 	}
 }
 
